@@ -11,7 +11,7 @@ const BadgeDetails = ({ badge, onClose }) => {
       onClick={() => onClose()}
     >
       <div
-        class="relative p-0.5 w-full max-w-4xl h-full md:h-auto bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg drop-shadow-md"
+        class="relative p-0.5 w-full max-w-4xl h-full md:h-auto bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg drop-shadow-md  flex justify-center items-center "
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();

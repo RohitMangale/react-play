@@ -83,11 +83,11 @@ const BadgesDashboard = () => {
         /> */}
       </Helmet>
 
-      <div className="font-sans antialiased leading-normal tracking-wider bg-cover h-full p-8 bg-[#F6F6F9]">
-        <div className="flex items-center h-auto  flex-wrap mx-auto my-16">
+      <div className="font-sans antialiased leading-normal tracking-wider bg-cover h-full lg:pr-8 lg:pl-10 pr:4 pl:4 pb-10 pt-32 bg-[#F6F6F9]">
+        <div className="flex items-center h-auto  flex-wrap mx-auto my-16 ">
           {userInfo ? (
-            <div className="w-full rounded-lg shadow-2xl bg-white mx-6" id="profile">
-              <div className="p-1 md:p-12 text-center">
+            <div className="w-full rounded-lg shadow-2xl bg-white mx-6 mb-10" id="profile">
+              <div className="p-1 md:p-12 text-center flex flex-col items-center justify-center">
                 <div
                   className="block border-4 border-white rounded-full mx-auto -mt-16 h-24 w-24 bg-cover bg-center md:h-32 md:w-32 md:-mt-32"
                   style={{
@@ -114,7 +114,7 @@ const BadgesDashboard = () => {
                         </h4>
                       </div>
                     ) : (
-                      <div className="flex flex-wrap gap-4 justify-center items-center">
+                      <div className="flex flex-wrap gap-y-4 lg:!justify-between !justify-center items-center">
                         {allBadges.map((badge, bi) => {
                           return (
                             <Badge
